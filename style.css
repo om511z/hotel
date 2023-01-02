@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+/*navbar*/
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    background-color: #01295c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.nav-links li {
+    margin: 0 30px;
+    font-size: 1.3rem;
+
+}
+
+.nav-links li:hover {
+    color: rgb(207, 179, 16);
+    transition: all .3s ease;
+    cursor: pointer;
+
+}
+
+.icon {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+
+/*header*/
+header {
+    width: 100vm;
+    height: 100vh;
+    background-image: url('banner-5.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-content {
+    margin-bottom: 200px;
+    color: rgb(247, 247, 247);
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(207, 179, 16);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: rgb(207, 179, 16);
+    border-radius: 30px;
+    color: whitesmoke;
+
+}
+
+.btn {
+    padding: 8px 15px;
+    background: rgb(207, 179, 16);
+    border-radius: 30px;
+    color: whitesmoke;
+    font-size: 2rem;
+
+}
+
+/*choose your place start*/
+.choose-your-place {
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.container {
+    background-color: #01295c;
+    width: 70%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%, 7%);
+    position: absolute;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+
+.container h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form {
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+textarea,
+input {
+    width: 100%;
+    font-weight: 400;
+    padding: 18px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border-color: #6f6df4;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    color: #01295c;
+    background: #c4cae0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(207, 179, 16);
+    color: #f1f1f1;
+}
+
+/*choose your place end*/
+
+/*Rooms start*/
+.Rooms {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Rooms h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.Rooms p {
+    text-align: center;
+    margin-top: 30px;
+    color: #01295c;
+    font-size: 20px;
+}
+
+.contaniercard {
+    width: 60%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.box {
+    height: 400px;
+    color: #01295c;
+    text-align: center;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contaniercard .box img {
+    width: 100%;
+    height: 200px;
+}
+
+/*Rooms end*/
+/*Welcome to Hotel*/
+
+.Content {
+    width: 100vm;
+    height: 80vh;
+    background-image: url('welcome3.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.Content .right {
+    width: 50%;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+.Content .info {
+    margin: 240px 10px;
+
+}
+
+.Content .info h1 {
+    font-size: 50px;
+}
+
+.Content .left {
+    width: 50%;
+    height: auto;
+}
+
+.Content .left img {
+    width: 40%;
+    border-radius: 160px;
+    margin: 150px;
+    border: 7px solid #fff;
+
+}
+
+/*Services*/
+
+.Services {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Services h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.Services p {
+    text-align: center;
+    margin-top: 30px;
+    color: #01295c;
+    font-size: 20px;
+}
+
+.Service-card {
+    width: 60%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.Service-card .box {
+    height: 500px;
+    color: #01295c;
+    text-align: center;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+
+.Service-card .box img {
+    width: 100%;
+    height: 300px;
+}
+
+/*Footer*/
+
+footer{
+    background: #01295c;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: rgb(207, 179, 16);
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+@media only screen and (max-width:850px) {
+
+    .icon {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0;
+        height: 90px;
+
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 2.5rem;
+
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #01295c;
+        margin-left: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-left: 0px;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    textarea,
+    input {
+        padding: 8px 10px;
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+    .Content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .Content .left img {
+        width: 100%;
+        border-radius: 160px;
+        margin: 0px;
+
+    }
+
+    .Content .info {
+        margin: 100px 10px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+
+    textarea,
+    input {
+        padding: 8px 10px;
+    }
+
+}
