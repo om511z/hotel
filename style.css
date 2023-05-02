@@ -128,8 +128,8 @@ a {
 
 .container {
     background-color: #01295c;
-    width: 70%;
-    min-width: 420px;
+    width: 100%;
+    
     padding: 35px 50px;
     transform: translate(-50%, 7%);
     position: absolute;
